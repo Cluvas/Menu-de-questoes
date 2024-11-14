@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+
+.navbar {
+    background-image: url('Greatsky.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Barriecito', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.corpo {
+    max-width: 1200px;
+    margin: 120px auto 40px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 1.5em 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+ul a:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pezinho {
+    background-color: rgb(49, 49, 116);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.pezinho span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pezinho a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.pezinho a:hover {
+    color: #ecf0f1;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .corpo {
+        margin-top: 120px; 
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5em;
+    }
+
+    ul a {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .pezinho {
+        padding: 20px 0;
+    }
+
+    .pezinho span {
+        font-size: 1rem;
+    }
+}
